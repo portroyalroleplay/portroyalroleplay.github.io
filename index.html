@@ -52,7 +52,7 @@ $(window).on("unload", function(e) {
 
 var firstUrlClean = true;
 
-var validLangs = ['en', 'es', 'ru', 'fr', 'de', 'it', 'zh', 'cs', 'pl', 'tk'];
+var validLangs = ['es'];
 var specialFontLang = ['ru', 'zh'];
 function loadLang() {
     var lang = navigator.language || navigator.userLanguage;
@@ -61,7 +61,7 @@ function loadLang() {
     if (Cookies.get("kcd_codex_lang")) {
         lang = Cookies.get("kcd_codex_lang");
     }
-    if (!lang) lang = "en";
+    if (!lang) lang = "es";
 
     var getVars = getUrlVars();
     if (getVars['lang']) {
@@ -69,7 +69,7 @@ function loadLang() {
     }
 
     if (!myInArray(lang, validLangs)) {
-        lang = "en";
+        lang = "es";
     }
     $("#codex-me").load("lang/"+lang+".html", function() {
         startThings();
@@ -83,9 +83,9 @@ function loadLang() {
     return true;
 }
 function changeLang(lang) {
-    if (!lang) lang = "en";
+    if (!lang) lang = "es";
     if (!myInArray(lang, validLangs)) {
-        lang = "en";
+        lang = "es";
     }
     $("#codex-me").empty();
     Cookies.set('kcd_codex_lang', lang);

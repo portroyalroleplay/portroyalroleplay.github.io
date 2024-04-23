@@ -1,10 +1,10 @@
 <html>
   <head>
-    <title>Kingdom Come Deliverance Codex</title>
+    <title>Port Royal Roleplay Códice</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Kingdom Come Deliverance Codex">
-    <meta name="keywords" content="Kingdom Come Deliverance Codex">
+    <meta name="description" content="Encuentra toda la información relacionada con el servidor para mejorar tu experiencia e inmersión dentro del mismo.">
+    <meta name="keywords" content="Port Royal Roleplay Códice">
     <meta name="author" content="https://github.com/nachazo">
     <link type="text/css" rel="stylesheet" href="media/css/style.css" />
     <link rel="icon" type="image/x-icon" href="media/img/icon.png">
@@ -44,7 +44,7 @@ $(window).on("unload", function(e) {
         var entry = entry.split(" ");
         if (entry[1]) {
             if (entry[1].indexOf("i_")>0) {
-                Cookies.set('kcd_codex_last_read', entry[1]);
+                Cookies.set('prrp_codex_last_read', entry[1]);
             }
         }
     }
@@ -58,8 +58,8 @@ function loadLang() {
     var lang = navigator.language || navigator.userLanguage;
     lang = lang.split("-");
     lang = lang[0];
-    if (Cookies.get("kcd_codex_lang")) {
-        lang = Cookies.get("kcd_codex_lang");
+    if (Cookies.get("prrp_codex_lang")) {
+        lang = Cookies.get("prrp_codex_lang");
     }
     if (!lang) lang = "es";
 
@@ -88,7 +88,7 @@ function changeLang(lang) {
         lang = "es";
     }
     $("#codex-me").empty();
-    Cookies.set('kcd_codex_lang', lang);
+    Cookies.set('prrp_codex_lang', lang);
     return loadLang(lang);
 }
 
@@ -113,9 +113,9 @@ function startThings()
     if (directLoadEntry()) {
         showEntry(directLoadEntry());
     } else {
-        if (Cookies.get("kcd_codex_last_read")) {
-            showEntry(Cookies.get("kcd_codex_last_read"));
-            Cookies.remove("kcd_codex_last_read");
+        if (Cookies.get("prrp_codex_last_read")) {
+            showEntry(Cookies.get("prrp_codex_last_read"));
+            Cookies.remove("prrp_codex_last_read");
         } else {
             showOnly("welcome");
             if(window.innerWidth <= 768) {
@@ -179,8 +179,8 @@ function startThings()
         $(this).find('.codex-icons a').fadeToggle(500);
     });
 
-    if (Cookies.get('kcd_codex_width')) {
-        $("div#entry").css("max-width", Cookies.get('kcd_codex_width'));
+    if (Cookies.get('prrp_codex_width')) {
+        $("div#entry").css("max-width", Cookies.get('prrp_codex_width'));
     }
     
     $("#escudo").dblclick(function() {
@@ -281,7 +281,7 @@ function plusWidth()
 			$(this).animate({
 				maxWidth: mw+"%",
 			}, 150);
-            Cookies.set('kcd_codex_width', $(this).css("max-width"));
+            Cookies.set('prrp_codex_width', $(this).css("max-width"));
         }
     });
 }
@@ -296,7 +296,7 @@ function minusWidth()
         $(this).animate({
 			maxWidth: mw+"%",
 		}, 150);
-        Cookies.set('kcd_codex_width', $(this).css("max-width"));
+        Cookies.set('prrp_codex_width', $(this).css("max-width"));
     });
 }
 
@@ -534,7 +534,7 @@ function markAllAsRead(category)
 
 function markAsRead(id)
 {
-    Cookies.set('kcd_codex_'+id, 'read');
+    Cookies.set('prrp_codex_'+id, 'read');
     $("#entry."+id+" #read .mark-as-read").hide();
     $("#entry."+id+" #read .mark-as-unread").show();
     statusReadList(id);
@@ -542,7 +542,7 @@ function markAsRead(id)
 
 function markAsUnread(id)
 {
-    Cookies.remove('kcd_codex_'+id);
+    Cookies.remove('prrp_codex_'+id);
     $("#entry."+id+" #read .mark-as-read").show();
     $("#entry."+id+" #read .mark-as-unread").hide();
     statusReadList(id);
@@ -550,7 +550,7 @@ function markAsUnread(id)
 
 function isRead(id)
 {
-    if (Cookies.get('kcd_codex_'+id)=="read") {
+    if (Cookies.get('prrp_codex_'+id)=="read") {
         return true;
     }
     return false;
@@ -597,7 +597,7 @@ function spoilerButtons()
         return openInMap(aux_x, aux_y, aux_zoom, false);
     });
     $("#yes-always").click(function() {
-        Cookies.set('kcd_codex_spoiler_accept', true);
+        Cookies.set('prrp_codex_spoiler_accept', true);
         $("#aviso-spoiler").hide();
         return openInMap(aux_x, aux_y, aux_zoom, false);
     });
@@ -624,7 +624,7 @@ function openInMap(x, y, zoom, spoiler)
     aux_y = null;
     aux_zoom = null;
     if (x && y) {
-        if (spoiler==true && Cookies.get('kcd_codex_spoiler_accept')!="true") {
+        if (spoiler==true && Cookies.get('prrp_codex_spoiler_accept')!="true") {
             aux_x = x;
             aux_y = y;
             aux_zoom = zoom;

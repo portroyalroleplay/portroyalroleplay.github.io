@@ -31,7 +31,71 @@
     <img src="media/img/icon_map_home.png" />
 </a>
 <input type="text" id="search" onkeyup="search(this)" placeholder="Buscar...">
-<div class="each-cat"><div class="title"><a href="javascript:void(0);" title="General" class="category-item" id="category_item_general" onclick="despliega('general')">Jugabilidad</a></div><div class="read-all masterTooltip" title="Marcar como leído" onclick="markAllAsRead('general')">&nbsp;</div> <div class="eye masterTooltip" title="Mostrar toda la categoría" onclick="showOnly('general')">&nbsp;</div><div class="clear"></div></div><a href="javascript:void(0);" title="Impuestos" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_general" onclick="showEntry('taxes', 'general')">· Impuestos</a><a href="javascript:void(0);" title="Aldea" style="display:none" id="menu_item_ui_codex_name_villages" class="menu-item cat_general" onclick="showEntry('daynight', 'general')">· Aldea</a><div class="separator"><img src="media/img/questLog_line.png" /></div>
+
+<div class="each-cat"><div class="title"><a href="javascript:void(0);" title="General" class="category-item" id="category_item_general" onclick="despliega('general')">General</a></div><div class="clear"></div></div>
+    <a href="javascript:void(0);" title="Empezar a jugar" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_general" onclick="showEntry('guiadeinicio', 'general')">· Empezar a jugar</a>
+    <a href="javascript:void(0);" title="Reglas del servidor" style="display:none" id="menu_item_ui_codex_name_villages" class="menu-item cat_general" onclick="showEntry('daynight', 'general')">· Reglas del servidor</a>
+	<a href="javascript:void(0);" title="Preguntas frecuentes" style="display:none" id="menu_item_ui_codex_name_villages" class="menu-item cat_general" onclick="showEntry('daynight', 'general')">· Preguntas frecuentes</a>
+	<a href="javascript:void(0);" title="Créditos" style="display:none" id="menu_item_ui_codex_name_villages" class="menu-item cat_general" onclick="showEntry('daynight', 'general')">· Créditos</a>
+	
+<div class="each-cat"><div class="title"><a href="javascript:void(0);" title="Lore" class="category-item" id="category_item_character" onclick="despliega('event')">Lore</a></div><div class="clear"></div></div>
+<a href="javascript:void(0);" title="Test" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_event" onclick="showEntry('riverwind', 'event')">· Test</a>
+
+<div class="each-cat"><div class="title"><a href="javascript:void(0);" title="Sociedad" class="category-item" id="category_item_location" onclick="despliega('society')">Sociedad</a></div><div class="clear"></div></div>
+	<a href="javascript:void(0);" title="Feudalismo" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_society" onclick="showEntry('feudalismo', 'society')">· Feudalismo</a>
+	<a href="javascript:void(0);" title="Guarnición de la ciudad" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_society" onclick="showEntry('higiene', 'society')">· Guarnición de la ciudad</a>
+	<a href="javascript:void(0);" title="Higiene" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_society" onclick="showEntry('higiene', 'society')">· Higiene</a>
+	<a href="javascript:void(0);" title="Jerarquía feudal" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_society" onclick="showEntry('jerarquiafeudal', 'society')">· Jerarquía feudal</a>
+	<a href="javascript:void(0);" title="Puertas de la ciudad" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_society" onclick="showEntry('jerarquiafeudal', 'society')">· Jerarquía feudal</a>
+	<a href="javascript:void(0);" title="Voseo" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_society" onclick="showEntry('voseo', 'society')">· Lazareto</a>
+	<a href="javascript:void(0);" title="Recaudación de impuestos" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_society" onclick="showEntry('voseo', 'society')">· Recaudación de impuestos</a>
+	<a href="javascript:void(0);" title="Torneos" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_society" onclick="showEntry('titulosnobiliarios', 'society')">· Torneos</a>
+	<a href="javascript:void(0);" title="Títulos nobiliarios" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_society" onclick="showEntry('titulosnobiliarios', 'society')">· Títulos nobiliarios</a>
+	<a href="javascript:void(0);" title="Voseo" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_society" onclick="showEntry('voseo', 'society')">· Voseo</a>
+
+<div class="each-cat"><div class="title"><a href="javascript:void(0);" title="Ubicaciones" class="category-item" id="category_item_events" onclick="despliega('location')">Ubicaciones</a></div><div class="clear"></div></div>
+    <a href="javascript:void(0);" title="Riverwind" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_location" onclick="showEntry('riverwind', 'location')">· Riverwind</a>
+    <a href="javascript:void(0);" title="Búhica" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_location" onclick="showEntry('buhica', 'location')">· Búhica</a>
+    <a href="javascript:void(0);" title="Hoofville" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_location" onclick="showEntry('hoofville', 'location')">· Hoofville</a>
+    <a href="javascript:void(0);" title="Iglesias" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_location" onclick="showEntry('iglesias', 'location')">· Iglesias</a>
+	<a href="javascript:void(0);" title="Kraflik" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_location" onclick="showEntry('kraflik', 'location')">· Kraflik</a>
+    
+<div class="each-cat"><div class="title"><a href="javascript:void(0);" title="Jugabilidad" class="category-item" id="category_item_tutorials" onclick="despliega('tutorial')">Jugabilidad</a></div><div class="clear"></div></div>
+	<a href="javascript:void(0);" title="Alcohol y embriaguez" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Alcohol y embriaguez</a>
+	<a href="javascript:void(0);" title="Alquimia" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Alquimia</a>
+	<a href="javascript:void(0);" title="Armadura" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Armadura</a>
+	<a href="javascript:void(0);" title="Baúles" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Baúles</a>
+	<a href="javascript:void(0);" title="Caballo" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Caballo</a>
+	<a href="javascript:void(0);" title="Cansancio" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Cansancio</a>
+	<a href="javascript:void(0);" title="Caza" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Caza</a>
+	<a href="javascript:void(0);" title="Caída a caballo" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Caída a caballo</a>
+	<a href="javascript:void(0);" title="Combate" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Combate</a>
+	<a href="javascript:void(0);" title="Compra y venta" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Compra y venta</a>
+	<a href="javascript:void(0);" title="Controles básicos" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Controles básicos</a>
+	<a href="javascript:void(0);" title="Crimen y castigo" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Crimen y castigo</a>
+	<a href="javascript:void(0);" title="Día y noche" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Día y noche</a>
+	<a href="javascript:void(0);" title="Escritura y lectura" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('lectura', 'tutorial')">· Escritura y lectura</a>
+	<a href="javascript:void(0);" title="Forzar cerraduras" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Forzar cerraduras</a>
+	<a href="javascript:void(0);" title="Habilidades del personaje" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Habilidades del personaje</a>
+	<a href="javascript:void(0);" title="Hambre y sed" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Hambre y sed</a>
+	<a href="javascript:void(0);" title="Herborista" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Herborista</a>
+	<a href="javascript:void(0);" title="Heridas y sanación" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Heridas y sanación</a>
+	<a href="javascript:void(0);" title="Inventario" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Inventario</a>
+	<a href="javascript:void(0);" title="Labranza" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Labranza</a>
+	<a href="javascript:void(0);" title="Mineros y peones" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Mineros y peones</a>
+	<a href="javascript:void(0);" title="NPC: Retirar ganancias" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· NPC: Retirar ganancias</a>
+	<a href="javascript:void(0);" title="Pesca" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Pesca</a>
+	<a href="javascript:void(0);" title="Pesebres" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Pesebres</a>
+    <a href="javascript:void(0);" title="Rendirse" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Rendirse</a>
+	<a href="javascript:void(0);" title="Robar bolsillos" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Robar bolsillos</a>
+	<a href="javascript:void(0);" title="Suciedad" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_tutorial" onclick="showEntry('rendirse', 'tutorial')">· Suciedad</a>
+	
+<div class="each-cat"><div class="title"><a href="javascript:void(0);" title="In game" class="category-item" id="category_item_society" onclick="despliega('character')">In Character</a></div><div class="clear"></div></div>
+	<a href="javascript:void(0);" title="Leyes Reales" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_character" onclick="showEntry('leyesreales', 'character')">· Leyes Reales</a>
+    <a href="javascript:void(0);" title="Leyes de Riverwind" style="display:none" id="menu_item_ui_codex_name_teboreni" class="menu-item cat_character" onclick="showEntry('taxes', 'character')">· Leyes de Riverwind</a>
+    <a href="javascript:void(0);" title="Leyes de Búhica" style="display:none" id="menu_item_ui_codex_name_villages" class="menu-item cat_character" onclick="showEntry('daynight', 'character')">· Leyes de Búhica</a>
+
+<div class="separator"><img src="media/img/questLog_line.png" /></div>
 <div class="center"><img src="media/img/shield_codex.png" id="escudo" /></div>
 <div>&nbsp;</div>
 
@@ -66,42 +130,174 @@
 
 <div id="entry" class="welcome">
     <div class="center"><img class="shadow logo" src="media/img/logo.png" /><br><div class="logo-codex">Códice</div></div>
-    <p>Bienvenido al códice de <b>Port Royal Roleplay</b>. Encuentra toda la información relacionada con el servidor para mejorar tu experiencia e inmersión dentro del mismo.</p>
+    <p>Bienvenido al códice de <b>Port Royal Roleplay</b>. Encuentra toda la información detallada y directamente relacionada con los sistemas y el mundo del servidor. 
+        ¡Sigue leyendo para descubrir todo lo que necesitas saber para sumergirte en esta emocionante experiencia de juego!</p>
     <div class="center"><img src="media/img/angel.png" style="width:75%;" /></div>
 	<br></br>
     <div class="separator"><img class="ornament" src="media/img/questLog_ornament.png" /></div>
     <div class="clear"></div>
 </div>
 
-<!-- Inicio de entradas de General -->
+<!-- General -->
 
-<div id="entry" class="taxes">
+<!-- Eventos -->
 
-    <h3>Impuestos</h3>
-	<p style="text-align:center"><img class src="media/codex/general_medicine.png"></p>
-        <p>En la época feudal, los impuestos tienen una importancia fundamental en la organización económica y social de la sociedad. El sistema feudal se basa en un intercambio de servicios 
-            y protección militar por tierras y recursos, y los impuestos son una de las principales formas en que los señores feudales mantienen su poder y riqueza.<br/>&nbsp;<br/>
-    
+<!-- Sociedad -->
+
+<div id="entry" class="titulosnobiliarios">
+    <h3>Títulos nobiliarios</h3>
+	<p style="text-align:center"><img class="no-zoom lazyload society_img ui_codex_name_music_img" data-src="media/codex/specifics_music.png" src="media/codex/specifics_music.png"></p>
+    <p>Los títulos nobiliarios representan la escala de poder y responsabilidad en el feudalismo de Port Royal Roleplay. Desde el Rey hasta el Caballero, cada título estructura la sociedad feudal en roles clave de gobierno, defensa y servicio. Esta jerarquía asegura la administración efectiva del reino, la defensa militar y la gestión de tierras, fundamentales para la estabilidad del sistema feudal.</p>
+	<span class="bold">[Rey]</span>
+	<p>El rey es el monarca supremo del reino. Para ser rey, necesitas tener la autoridad y el poder sobre todo el reino, generalmente heredado por linaje o conquista.</p>
+	<span class="bold">[Duque]</span>
+	<p>Un duque es un noble de alto rango que gobierna sobre un ducado. Para ser duque, necesitas ser un vasallo leal al rey y tener la capacidad de administrar y defender un ducado. Un ducado es una región gobernada por un duque. Es una división territorial que puede incluir varias ciudades y pueblos.</p>
+	<span class="bold">[Conde]</span>
+	<p>Un conde es un noble que gobierna sobre un condado. Para ser conde, necesitas tener tierras y vasallos bajo tu autoridad, además de ser un vasallo del rey o un duque. Un condado es una división territorial más pequeña que un ducado, gobernada por un conde. Puede consistir en una ciudad principal y las tierras circundantes.</p>
+	<span class="bold">[Barón]</span>
+	<p>Un barón es un noble de menor rango que gobierna sobre una baronía o una tierra menor. Para ser barón, necesitas tener tierras y vasallos, pero en una escala más pequeña que un conde. Una baronía es una región gobernada por un barón. Es una división territorial más pequeña que un condado.</p>
+	<span class="bold">[Señor]</span>
+	<p>Un señor es un noble que generalmente sirve bajo un conde, un barón o un duque. Para ser señor, puedes ser un caballero o un noble menor que posee tierras y sirve a un noble superior.</p>
+	<span class="bold">[Caballero]</span>
+	<p>Un caballero es un guerrero noble que puede tener tierras y servir bajo un señor o noble superior. Para ser caballero, necesitas entrenamiento militar, armadura y armas, además de ser reconocido como tal por la sociedad noble.</p><br/>&nbsp;<br/>
 	<div class="clear"></div>
     <div class="space-mobile">&nbsp;</div>
 </div>
 
-<div id="entry" class="daynight">
+<div id="entry" class="feudalismo">
+    <h3>Feudalismo</h3>
+	<p style="text-align:center"><img class="no-zoom lazyload general_img ui_codex_name_castles_img" data-src="media/codex/general_castles.png" src="media/codex/general_castles.png"></p>
+        <p>El feudalismo es un sistema político basado en la propiedad de las tierras. Sus cimientos son los dominios (feudum): una zona determinada (un territorio, unas tierras) que el propietario alquila a otros. El gobernante (ya sea laico o religioso) es el señor feudal natural (suzerain - feudatario soberano) y aquellos que viven en sus dominios son sus vasallos. La transferencia se realiza con gran pompa y ceremonia, en el llamado "homenaje", durante el cual el vasallo promete lealtad y ayuda militar (así como otros servicios) a su señor feudal. El contrato solo puede rescindirse mediante la muerte de una de las partes o en caso de incumplimiento material. El señor feudal no solo puede tener varios vasallos, un vasallo también puede tener varios señores feudales. En caso de guerra, hay que elegir bando en función del contrato de vasallaje.</p>
+		<p>El feudalismo también determina la relación con las clases más pobres: los siervos, que trabajan en terrenos cedidos, pagan una parte de lo que sacan de ellos y sustentan a su señor, sus soldados y funcionarios o a un monasterio. Estas rentas son una fuente de riqueza sobre todo para la nobleza. Partes del terreno pueden cederse en encomiendas, de manera que el vasallo del rey se convierte en señor feudal de sus propios vasallos.</p><br/>&nbsp;<br/>
+	<div class="clear"></div>
+    <div class="space-mobile">&nbsp;</div>
+</div>
 
-    <h3>Día y noche</h3>
-        <p>En la Edad Media, había un movimiento constante de grupos de soldados, bandidos y guardias, de diferentes tamaños, o de combatientes solitarios, y que no hacía más que cambiar de base de operaciones. Vivían en chozas improvisadas, refugios o tiendas organizadas en torno a un fuego. Algunos se quedaban varios días en un mismo campamento mientras que otros solo acampaban durante una noche y luego seguían su camino. Un factor importante a la hora de escoger un lugar de acampada era la disponibilidad de agua, leña y caza. Era muy raro que acamparan cerca de aldeas o de castillos, esos eran lugares de acampada reservados para los nobles y sus séquitos. Durante las guerras o durante las huidas no era raro que durmieran al raso, ya que no tenían tiempo de montar y desmontar tiendas. Los ejércitos de los nobles también acampaban en los lugares donde se iban reuniendo las milicias provinciales o mientras esperaban la llegada de refuerzos o aliados. Los más duraderos (a veces, por varios meses) eran los campamentos para asediar baluartes o los que se montaban en las ribera de los ríos, esperando para enfrentarse a las fuerzas enemigas del otro lado del río.<br/>&nbsp;<br/>
-Las tiendas se montaban juntas, por razones de seguridad (casi como si fueran almenas). La tienda más grande estaba en el centro del campamento y era la del comandante. Las tiendas cercanas albergaban a los nobles y los soldados de alta graduación, que a su vez estaban rodeadas por chozas o refugios más sencillos para los soldados rasos y sus caballos. No había ninguna necesidad de acampar juntos en un lugar: un ejército podía montar varios campamentos en diferentes lugares. En los campamentos más grandes podía haber una capilla de campo, una enfermería para tratar a los heridos y, a veces, incluso un burdel improvisado. <br/>&nbsp;<br/>
-Las tiendas sencillas de principios de la Edad Media tenían la forma de una "A" mayúscula, con una base cuadrada y un poste central montado sobre dos soportes verticales. El tejido de la tienda solía ser lino o cáñamo. Sin teñir para los soldados rasos, pero con diferentes coloraciones y decoraciones en el caso de los comandantes. Los hombres dormían en el suelo sobre esterillas, alfombras o alfombrillas, pero la nobleza y los eclesiásticos solían llevar camas de viaje. <br/>&nbsp;<br/>
+<div id="entry" class="higiene">
+    <h3>Higiene</h3>
+	<p style="text-align:center"><img class="no-zoom lazyload society_img ui_codex_name_hygiene_img" data-src="media/codex/specifics_hygiene.png" src="media/codex/specifics_hygiene.png"></p>
+    <p>A partir del siglo XIII, los residuos se tiran detrás de la casa o se entierran en pozos. Los retretes son letrinas cubiertas de una estructura de madera con un asiento o una simple tabla.</p>
+	<p>No es raro que una letrina se comparta entre varias viviendas. En los castillos, que son poco acogedores y difíciles de calentar, a veces hay baños con bañeras o, incluso, pequeñas piscinas. La natación es atractiva no solo como medio para limpiar el cuerpo, sino como un placer. En las casas privadas, tener baño es una señal de riqueza y de posición social. Aunque esto no quiere decir que los ricos se laven más a menudo.</p>
+	<p>El acto de higiene más popular es lavarse las manos en un pesebre. Incluso las casas más pobres pueden permitirse una palangana con una jarra de agua o una cisterna de agua con un grifo. Las personas más limpias son los aldeanos, que a menudo se lavan en los establos o en el río.</p>
+	<p>La Iglesia está bastante en contra de la limpieza del cuerpo, así que permite que los sacerdotes o los monjes se bañen solo dos veces al año: en Navidad y en la fiesta de un santo escogido.</p>
+	<div class="clear"></div>
+    <div class="space-mobile">&nbsp;</div>
+</div>
 
-Las campañas largas eran todo un desafío logístico y los suministros siempre eran responsabilidad del administrador de la ciudad o pueblo aliado que estuviera más cerca. Si el ejército estaba en territorio hostil, enviaba destacamentos de aprovisionamiento para conseguir combustible y comida. Cuando los suministros se acababan era el momento de ir a otro lugar o abandonar la campaña. <br/>&nbsp;<br/>
-Lo peor que podía pasar es que se hubiera un brote epidémico en el campamento, ya que la higiene era algo muy difícil de conseguir. Mientras se esperaba a los refuerzos era habituales que hubiera disputas, duelos y peleas, que podían escalar hasta convertirse en conflictos más serios que podían llegar a poner en peligro al ejército. Debido a eso, las disputas debían ser juzgadas y, cuando era necesario, se aplicaban castigos severos.<p>
-    <div class="clear"></div>
+<div id="entry" class="jerarquiafeudal">
+    <h3>Jerarquía feudal</h3>
+	<p style="text-align:center"><img class="no-zoom lazyload society_img ui_codex_name_feudal_img" data-src="media/codex/society_hierarchie.png" src="media/codex/society_hierarchie.png"></p>
+    <span class="bold">[Rey]</span>
+	<p>El Rey se encuentra en la cima de la cúspide feudal, y es de carácter sagrado, se le considera elegido por Dios para ejercer su poder. Tiene poder suficiente como para dictar leyes, declarar guerras, recaudar impuestos y ejercer de juez supremo en todo el Reino de Telmar. Asimismo, para tomar decisiones el Rey cuenta con la ayuda de su Consejo Real formado por nobles y autoridades religiosas.</p>
+	<span class="bold">[Clero]</span>
+	<p>Son los hombres y mujeres que dedican su vida a la iglesia. Cada ubicación regida por un señor tiene a un sacerdote que se dedican a ministrar los sacramentos, celebración de misa y oraciones, enseñanza y predicación, consejería y confesión, además de ser considerados intermediarios con Dios.</p>
+	<span class="bold">[Señores y nobles]</span>
+	<p>La nobleza como duques, condes, barones, es el estamento privilegiado con la misión de proteger militarmente a la sociedad con sus caballeros, también se dedican a administrar sus tierras y recibir a sus vasallos. Viven fundamentalmente en sus castillos, que son fortalezas preparadas para proteger y refugiarse en caso de peligro.
+	Las mujeres nobles, conocidas como damas, son las responsables de perpetuar el linaje de la familia, teniendo hijos y cuidándolos.</p>
+	<span class="bold">[Caballeros]</span>
+	<p>Los caballeros son guerreros que pertenecen a familias nobles y que se preparan toda la vida para luchar. Deben cumplir con un código de honor y conducta valerosa y fiel. Su entretenimiento son las justas o torneos para entrenarse, cazando o celebrando banquetes o fiestas.</p>
+	<span class="bold">[Servidumbre]</span>
+	<p>La vida de los siervos es muy diferente a la de los nobles. Trabajan de sol a sol y viven con muy poco, toda la familia suele vivir en una misma casa, en una misma habitación y junto a sus animales. Su trabajo principal suele ser el huerto, el cual es basado como método de subsistencia para autoconsumo, esto no les exime del pago de una tasa con la que mantienen al gobernante, soldados y funcionarios, además de cumplir con la tasa impuesta por el Rey a cada feudo.</p><br/>&nbsp;<br/>
+	<div class="clear"></div>
+    <div class="space-mobile">&nbsp;</div>
+</div>
+
+<!-- Ubicaciones -->
+
+<div id="entry" class="riverwind">
+    <h3>Riverwind</h3>
+	<p style="text-align:center"><img class="no-zoom lazyload location_img ui_codex_name_samopse_img" data-src="media/codex/location_samopse.png" src="media/codex/location_samopse.png"></p>
+	<p>Riverwind es un pueblo ubicado en la región de Valtum, dentro de los dominios de la Casa Harkon. Cuenta con un castillo conocido como el "Nido de Víboras". Los primeros registros de Riverwind se remontan a mediados del siglo IX, cerca de su fecha de fundación. En sus primeros años, Riverwind fue habitado por los pobladores que se establecieron en la región, hasta que en el siglo X el rey de Telmar, Jurah Harkon II, lo incorporó a su territorio. El actual gobernante es Alguff Harkon de Riverwind, hermano del rey. El territorio cuenta con bosques, ríos y una mina que constituye el principal sustento económico de la región.</p>
+<span class="bold">[Castillo]</span>
+<p>El castillo de Riverwind fue construido por William Harkon a finales del siglo X (la primera mención escrita data del año 1150). Se trata de una gigantesca fortaleza de piedra que sirve como principal bastión de defensa del pueblo en caso de ataque. Hasta la fecha, ningún oponente ha logrado penetrar sus impresionantes defensas.</p>
+<span class="bold">[Iglesia de San Longinos]</span>
+<p>Es una pequeña iglesia ubicada en los límites del pueblo, que representa el principal centro religioso en su territorio.</p>
+<span class="bold">[Mina]</span>
+<p>Es la principal fuente de ingresos del feudo. Muchos trabajadores trabajan en las minas de manera manual, utilizando martillos y cinceles, alumbrados por pequeñas lámparas portátiles. La minería es un oficio muy peligroso y agotador. En las comunidades mineras se forman gremios y mercados dedicados a la venta de minerales.</p><br/>&nbsp;<br/>
+	<div class="clear"></div>
+    <div class="space-mobile">&nbsp;</div>
+</div>
+
+<div id="entry" class="buhica">
+    <h3>Búhica</h3>
+	<p style="text-align:center"><img class="no-zoom lazyload location_img ui_codex_name_sazava_m_img" data-src="media/codex/location_sazava_mesto.png" src="media/codex/location_sazava_mesto.png"></p>
+	<p>Búhica es un pequeño asentamiento con un castillo, situado en el feudo de la Casa Wind. Se trata de un pueblo cuya principal actividad económica es el arte, y su iglesia fue la más grande de la región en su momento, hasta que fue quemada a mediados del siglo X. El territorio de Búhica es un lugar de muchas creencias paganas y religiosas que han logrado sobrevivir a la conversión al cristianismo de la región. El primer registro de Búhica se remonta a mediados del siglo VII, cuando la familia Wind se encargó de construir un pequeño asentamiento en la región.</p>
+<span class="bold">[Castillo]</span>
+<p>El castillo de Búhica, también conocido como "Ojo de búho", tiene sus orígenes en mediados del siglo XI. Su construcción fue iniciada por la matriarca Lord Gert Wind, pero no fue terminado hasta el siglo XII por su nieto, Lord Jeral Wind. Los primeros registros escritos no llegaron hasta el siglo XIII.</p>
+<span class="bold">[Iglesia de San Jorge]</span>
+<p>La iglesia de San Jorge en su momento era la más grande de la región, pero tras un ataque de bandidos fue quemada. Actualmente se encuentra en etapa de reconstrucción.</p><br/>&nbsp;<br/>
+	<div class="clear"></div>
+    <div class="space-mobile">&nbsp;</div>
+</div>
+
+<div id="entry" class="hoofville">
+    <h3>Hoofville</h3>
+	<p style="text-align:center"><img class="no-zoom lazyload location_img ui_codex_name_neuhof_img" data-src="media/codex/location_neuhof.png" src="media/codex/location_neuhof.png"></p>
+	<p>Hoofville es un pequeño establo en los dominios de la Casa Wind, que durante mucho tiempo se encarga de cuidar, entrenar y vender corceles al mejor postor. Hoy en día, el Lord de Búhica, Harsen Wind, busca mejorar el lugar y convertirlo en un pueblo en el futuro.</p><br/>&nbsp;<br/>
+	<div class="clear"></div>
+    <div class="space-mobile">&nbsp;</div>
+</div>
+
+<div id="entry" class="rendirse">
+    <h3>Rendirse</h3>
+	<img style="float:right" class="lazyload column society_img ui_codex_name_priest_img" data-src="media/codex/craft_priest.png" src="media/codex/craft_priest.png">
+	<p><span class="bold">[Rendirse en combate]</span><br>&nbsp;<br>
+La vida es un don divino, ¡el combate no siempre tiene que terminar con una muerte! Así que cuando está claro que un combatiente está derrotado, siempre tendrá la opción de <span class="bold">[/rendirse]</span> de manera honorable y la respuesta honorable será aceptar su rendición.<br>&nbsp;<br>
+Si alguien se rinde ante ti, dependerá de ti decidir qué harás con él. Puedes dejarlo ir o negarte a aceptar la rendición y continuar el combate. Otra opción común es aceptar la rendición por un precio, bien dinero o bien equipo.<br>&nbsp;<br>
+<span class="bold">[Rendirse a los guardias]</span><br>&nbsp;<br>
+Si un guardia, un alguacil o cualquier otra autoridad exige tu rendición o quiere realizar un registro personal, se puede aceptar con <span class="bold">[/rendirse]</span>. Pero hay que decidir rápido, porque en estos tiempos de tribulaciones los defensores de la ley tienen poca paciencia y no dudarán en usar la fuerza si no se muestra una cooperación total.</p>
+	<div class="clear"></div>
+    <div class="space-mobile">&nbsp;</div>
+</div>
+
+<div id="entry" class="voseo">
+    <h3>Voseo</h3>
+	<p><span class="bold">[Rendirse en combate]</span><br>&nbsp;<br>
+La vida es un don divino, ¡el combate no siempre tiene que terminar con una muerte! Así que cuando está claro que un combatiente está derrotado, siempre tendrá la opción de <span class="bold">[/rendirse]</span> de manera honorable y la respuesta honorable será aceptar su rendición.<br>&nbsp;<br>
+Si alguien se rinde ante ti, dependerá de ti decidir qué harás con él. Puedes dejarlo ir o negarte a aceptar la rendición y continuar el combate. Otra opción común es aceptar la rendición por un precio, bien dinero o bien equipo.<br>&nbsp;<br>
+<span class="bold">[Rendirse a los guardias]</span><br>&nbsp;<br>
+Si un guardia, un alguacil o cualquier otra autoridad exige tu rendición o quiere realizar un registro personal, se puede aceptar con <span class="bold">[/rendirse]</span>. Pero hay que decidir rápido, porque en estos tiempos de tribulaciones los defensores de la ley tienen poca paciencia y no dudarán en usar la fuerza si no se muestra una cooperación total.</p>
+	<div class="clear"></div>
+    <div class="space-mobile">&nbsp;</div>
+</div>
+
+<div id="entry" class="lectura">
+    <h3>Escritura y lectura</h3>
+	<p style="text-align:center"><img class="no-zoom lazyload society_img ui_codex_name_music_img" data-src="media/codex/specifics_music.png" src="media/codex/specifics_music.png"></p>
+    <p>La escritura y lectura son habilidades muy raras en la Edad Media. Puedes abrir y tratar de entender los glifos, pero deberás encontrar a alguien que pueda enseñarte.</p>
+	<br/>&nbsp;<br/>
+	<div class="clear"></div>
+    <div class="space-mobile">&nbsp;</div>
+</div>
+
+<div id="entry" class="leyesreales">
+    <h3>Leyes Reales</h3>
+	<p style="text-align:center"><img class="no-zoom lazyload society_img ui_codex_name_music_img" data-src="media/codex/specifics_music.png" src="media/codex/specifics_music.png"></p>
+    <p>Yo, Uriel Harkon III, por la gracia de Dios, Rey de Telmar, en ejercicio de mi soberanía y autoridad real, promulgo los siguientes decretos para el bienestar y la prosperidad de mi reino:</p>
+	<p><span class="bold">[Artículo I. De la Seguridad del Reino]</span>
+	<p>I. Se establece la obligación de todos los hombres libres de participar en la milicia local para la defensa del reino en caso de invasión o ataque. Se instituye el entrenamiento regular para asegurar la preparación de nuestras fuerzas.</p>
+	<p>II. Se declara que todo acto de traición contra la corona será castigado con la pena de muerte. Cualquier conspiración o intento de subvertir el orden establecido será tratado con el máximo rigor de la ley.</p>
+	<p><span class="bold">[Artículo II. De la Administración de Justicia]</span>
+	<p>I. Se establece la creación de tribunales locales en las principales ciudades y villas del reino, presididos por nobles o magistrados designados por la corona. Estos tribunales serán responsables de administrar justicia de manera rápida y equitativa, resolviendo disputas civiles y criminales.</p>
+	<p>II. Se impone la protección de los derechos legales de los siervos y campesinos frente a la arbitrariedad de los señores feudales. Todo abuso de autoridad será investigado y sancionado conforme a las leyes del reino.</p>
+	<p><span class="bold">[Artículo III. De las Obligaciones Fiscales]</span>
+	<p>I. Se establece un sistema de impuestos justos y proporcionales para financiar las actividades del gobierno y mantener la infraestructura del reino. Los impuestos serán recaudados de acuerdo con la capacidad económica de cada individuo y su posición social.</p>
+	<p>II. Se instituye la creación de inspectores fiscales para garantizar la correcta recaudación de impuestos y prevenir la evasión fiscal. Se impondrán severas sanciones a aquellos que intenten defraudar al fisco real.</p>
+	<p><span class="bold">[Artículo IV. De los Derechos y Deberes de la Nobleza y el Campesinado]</span>
+	<p>I. Se reconoce el derecho de la nobleza a administrar sus propiedades y ejercer su autoridad feudal sobre sus siervos y vasallos, siempre y cuando respeten las leyes y costumbres del reino.</p>
+	<p>II. Se establece la obligación de los señores feudales de proteger y velar por el bienestar de sus siervos, proporcionándoles seguridad y justicia en sus dominios.</p>
+	<br></br>
+	<p>Estos decretos entrarán en vigor de manera inmediata y serán de obligatorio cumplimiento para todos los habitantes del reino. Su Majestad, el Rey, garantiza su compromiso con la justicia y la prosperidad de todos sus súbditos.</p>
+	<p>Dado bajo mi mano y sello real, en Telmar, en el 3 día del mes de mayo del año 1400.</p>
+	<p>Uriel Harkon III,</p>
+	<p>Rey de Telmar</p>
+	<div class="clear"></div>
     <div class="space-mobile">&nbsp;</div>
 </div>
 
 <!-- Fin de entradas de General -->
 
-	<div id="nav-controls">
+<div id="nav-controls">
 		<div id="read">
 	        <div class="mark-as-read masterTooltip" title="Marcar como leído" onclick="markAsRead('ui_codex_name_uzice')" style="display:none"></div>
 	        <div class="mark-as-unread masterTooltip" title="Marcar como no leído" onclick="markAsUnread('ui_codex_name_uzice')" style="display:none"></div>
@@ -111,7 +307,7 @@ Lo peor que podía pasar es que se hubiera un brote epidémico en el campamento,
 
 </div>
 
-<div id="footer">La información textual y gráfica presentada en este sitio web sobre <a href="https://www.kingdomcomerpg.com" target="_blank">Kingdom Come: Deliverance</a> es propiedad y tiene copyright de <a href="https://warhorsestudios.cz/" target="_blank">Warhorse Studios</a>.</div>
+<div id="footer">La información textual y gráfica presentada en este sitio web sobre <a href="https://discord.com/channels/499880009763258378/922445258904715305/1182629555974983750" target="_blank">Port Royal Roleplay</a> es propiedad y tiene copyright de <a href="https://warhorsestudios.cz/" target="_blank">Warhorse Studios</a>.</div>
 </div>
 
 <div id="aviso-spoiler" style="display:none">

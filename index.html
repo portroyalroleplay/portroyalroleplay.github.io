@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Port Royal Roleplay - Créditos</title>
+  <style>
+    html, body {
+      background: #181511;
+      margin: 0;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+    }
+    .fade-black {
+      position: fixed;
+      z-index: 10;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #000;
+      pointer-events: none;
+      opacity: 1;
+      animation: fadeBlack 60s linear forwards;
+    }
+    @keyframes fadeBlack {
+      0%   { opacity: 1; }
+      12%  { opacity: 0; }
+      88%  { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .credits-container {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      top: 0; left: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .credits-scroll {
+      width: 100vw;
+      animation: scrollCredits 60s linear forwards;
+    }
+    .credits-scroll img {
+      display: block;
+      width: 100vw;
+      height: auto;
+    }
+    @keyframes scrollCredits {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-6480px); /* 7 imágenes x 1080px - 1080px = 6480px */
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="fade-black"></div>
+  <div class="credits-container">
+    <div class="credits-scroll">
+<audio src="credits.wav" autoplay loop style="display:none"></audio>
+
+      <img src="1.png" alt="Créditos Port Royal Roleplay">
+      <img src="2.png" alt="Créditos Port Royal Roleplay">
+      <img src="3.png" alt="Créditos Port Royal Roleplay">
+      <img src="4.png" alt="Créditos Port Royal Roleplay">
+      <img src="5.png" alt="Créditos Port Royal Roleplay">
+      <img src="6.png" alt="Créditos Port Royal Roleplay">
+	  <img src="0.png" alt="Créditos Port Royal Roleplay">
+    </div>
+  </div>
+</body>
+</html>
